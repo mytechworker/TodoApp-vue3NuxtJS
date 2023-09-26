@@ -1,9 +1,5 @@
-// jest.setup.js
-console.log('Setting up JSDOM environment...');
-
 // Use import for ES modules
 import { JSDOM } from 'jsdom';
-
 
 // Create a virtual DOM environment
 const dom = new JSDOM('<!DOCTYPE html><html><body></body></html>', {
