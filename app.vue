@@ -24,6 +24,7 @@ export default {
   padding: 15px;
   display: flex;
 }
+
 @media (max-width: 425px) {
   .todo_title {
     max-width: 80%;
@@ -37,12 +38,14 @@ export default {
   border-collapse: collapse;
   margin-top: 20px;
 }
+
 .todo-table :is(thead, tbody) tr {
   width: 100%;
 }
 .todo-table :is(th, td) {
   width: 100%;
 }
+
 .todo-table :is(thead, tbody) :is(th:first-child, td:first-child),
 .todo-table :is(thead, tbody) :is(th:last-child, td:last-child) {
   width: 50px;
