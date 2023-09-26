@@ -15,15 +15,15 @@ test('Add a new task', async () => {
   const addButton = container.querySelector('[id=btnAdd]');
 
   // Type a task in the input field
-  inputField.value = 'New Task3';
+  inputField.value = 'Task create from Test Case';
   inputField.dispatchEvent(new Event('input'));
 
-  // Assert that a new task has been added
-  //expect(instance.newTask).toBe('New Task2'); // Input field should be cleared
-  expect(instance.tasks).toHaveLength(0); // One task should be added
+  // One task should be added in list
+  expect(instance.tasks).toHaveLength(0); 
   
   // Click the "Add Task" button
   addButton.click();
+
   // Cleanup
   app.unmount();
   document.body.removeChild(container);
